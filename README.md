@@ -1,66 +1,84 @@
-# 🛡️ Active Directory Attack Path Lab
+\# Internal Network Penetration Test – Active Directory
 
-## 🔍 Overview
-This project simulates an **internal Active Directory penetration test** performed in a controlled lab environment. The goal is to identify misconfigurations, enumerate domain objects, and analyze realistic attack paths that could lead to high-impact compromise.
 
-The focus is on **professional reasoning**, not reckless exploitation.
 
----
+\## Overview
 
-## 🧪 Lab Environment
-- 🖥️ **Domain Controller:** Windows Server (DC01)
-- 💻 **Workstation:** Windows Client (WS01)
-- 🐧 **Attacker Machine:** Kali Linux
-- 🌐 **Domain:** corp.local
-- 🔒 **Network:** Isolated VirtualBox lab
+This repository documents an internal Active Directory penetration test conducted in a controlled lab environment. The project follows a structured, OSCP-style methodology from discovery to attack path analysis.
 
----
 
-## 🧭 Methodology
-The assessment follows a real-world internal pentest workflow:
 
-1️⃣ Network discovery & host identification  
-2️⃣ Service enumeration (LDAP, SMB, Kerberos)  
-3️⃣ Domain user & object enumeration  
-4️⃣ Password spraying (lab-safe)  
-5️⃣ BloodHound attack path analysis  
-6️⃣ Risk & impact evaluation  
+The focus of this engagement is \*\*privilege escalation through Active Directory misconfigurations\*\*, not exploitation of software vulnerabilities.
 
----
 
-## 🚨 Key Findings
-- Internal exposure of domain services
-- Weak password hygiene on domain accounts
-- Misconfigured delegated permissions
-- Valid escalation path from **Helpdesk → Domain Admin**
-- Other users confirmed with **no escalation path**
 
----
+\## Environment
 
-## 💥 Impact
-Compromise of a Helpdesk account could result in:
-- Full domain takeover
-- Credential theft
-- Lateral movement
-- Total Active Directory trust failure
+\- Domain: corp.local
 
----
+\- Domain Controller: DC01
 
-## 🛠️ Tools Used
-- Nmap
-- smbclient
-- ldapsearch
-- kerbrute
-- BloodHound / SharpHound
-- Active Directory administration tools
+\- Workstation: WS01
 
----
+\- Attacker System: Kali Linux
 
-## ⚠️ Disclaimer
-All activities were conducted **only in a personal lab environment** for educational purposes.
 
----
 
-## 👤 Author
-**Wassim Abelghouch**  
-Cybersecurity Student | Aspiring Penetration Tester
+\## Methodology
+
+1\. Scope definition
+
+2\. Network and service discovery
+
+3\. Domain enumeration (SMB, LDAP, Kerberos)
+
+4\. Authenticated enumeration
+
+5\. BloodHound attack path analysis
+
+6\. Impact assessment and documentation
+
+
+
+\## Key Findings
+
+\- Over-delegation of permissions enabled privilege escalation
+
+\- One support account (HELPDESK) had a valid path to Domain Admin
+
+\- Other users with elevated-sounding roles did not present exploitable paths
+
+\- Risk originated from ACL and delegation misconfiguration
+
+
+
+\## Tools Used
+
+\- Nmap
+
+\- Kerbrute
+
+\- LDAP utilities
+
+\- SMB clients
+
+\- SharpHound / BloodHound
+
+\- Neo4j
+
+
+
+\## Disclaimer
+
+This project was conducted in a personal lab environment for educational and portfolio purposes only. No unauthorized systems were targeted.
+
+
+
+\## Author
+
+Wassim Abelghouch
+
+Internal Network \& Active Directory Security Practice
+
+
+

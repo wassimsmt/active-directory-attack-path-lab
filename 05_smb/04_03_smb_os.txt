@@ -1,0 +1,9 @@
+# Nmap 7.98 scan initiated Tue Feb  3 13:57:31 2026 as: /usr/lib/nmap/nmap --script smb-os-discovery.nse -p445 -oN AD_LAB_REPORT/04_smb/04_03_smb_os.txt 192.168.56.10
+Nmap scan report for 192.168.56.10
+Host is up (0.0017s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 08:00:27:8F:2A:BD (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Tue Feb  3 13:57:32 2026 -- 1 IP address (1 host up) scanned in 0.77 seconds

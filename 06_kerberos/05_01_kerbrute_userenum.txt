@@ -1,0 +1,15 @@
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 02/03/26 - Ronnie Flathers @ropnop
+
+2026/02/03 16:26:55 >  Using KDC(s):[0m
+2026/02/03 16:26:55 >  	192.168.56.10:88
+[0m
+[32m2026/02/03 16:26:55 >  [+] VALID USERNAME:	 administrator@corp.local[0m
+[32m2026/02/03 16:26:55 >  [+] VALID USERNAME:	 helpdesk@corp.local[0m
+2026/02/03 16:26:55 >  Done! Tested 10 usernames (2 valid) in 0.164 seconds[0m

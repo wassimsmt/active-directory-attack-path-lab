@@ -1,0 +1,27 @@
+# Nmap 7.98 scan initiated Tue Feb  3 13:19:13 2026 as: /usr/lib/nmap/nmap -sS -p- -T4 -oN AD_LAB_REPORT/03_service_enum/03_01_dc01_full_tcp.txt 192.168.56.10
+Nmap scan report for 192.168.56.10
+Host is up (0.00085s latency).
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+5985/tcp  open  wsman
+9389/tcp  open  adws
+49664/tcp open  unknown
+49668/tcp open  unknown
+53527/tcp open  unknown
+53528/tcp open  unknown
+61061/tcp open  unknown
+61071/tcp open  unknown
+MAC Address: 08:00:27:8F:2A:BD (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Tue Feb  3 13:20:49 2026 -- 1 IP address (1 host up) scanned in 95.74 seconds

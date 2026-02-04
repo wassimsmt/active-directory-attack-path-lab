@@ -1,0 +1,8 @@
+Attack Path Overview:
+
+1. Attacker gains domain access via weak credentials (jdoe / Password123)
+2. Enumerates Active Directory groups
+3. Discovers the helpdesk account with delegated permissions
+4. Abuses delegated rights to reset higher-privilege user passwords
+5. Gains access to high-value accounts
+6. Escalâtes privilèges to domain dominance
