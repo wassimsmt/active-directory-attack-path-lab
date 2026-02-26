@@ -3,7 +3,7 @@
 ## 🧭 Lab Architecture
 
 ```
-               Internal Active Directory Environment (corp.local)
+          Internal Active Directory Environment (corp.local)
 
 +----------------+        Internal Network         +----------------------+
 |   Kali Linux   | <-----------------------------> |  Domain Controller   |
@@ -13,15 +13,15 @@
 | - SMB Enum     |                                 | - DNS Services       |
 | - LDAP Queries |                                 +----------------------+
 | - Kerbrute     |                                          |
-| - BloodHound   |                                          |
-+----------------+                                          |
-                                                             |
-                                                     +------------------+
-                                                     |   Workstation    |
-                                                     |      (WS01)      |
-                                                     | - Domain Joined  |
-                                                     | - User Sessions  |
-                                                     +------------------+
+| - BloodHound   |                                           |
++----------------+                                            |
+                                                               |
+                                                      +------------------+
+                                                      |   Workstation    |
+                                                      |      (WS01)      |
+                                                      | - Domain Joined  |
+                                                      | - User Sessions  |
+                                                      +------------------+
 ```
 
 Assessment Flow:
@@ -157,4 +157,5 @@ No real-world systems were accessed or targeted.
 ## 👤 Author
 **Wassim Abelghouch**  
 Cybersecurity Student | Aspiring Penetration Tester
+
 
