@@ -1,5 +1,32 @@
 # 🛡️ Active Directory Attack Path Analysis Lab
 
+## 🧭 Lab Architecture
+
+```
+               Internal Active Directory Environment (corp.local)
+
++----------------+        Internal Network         +----------------------+
+|   Kali Linux   | <-----------------------------> |  Domain Controller   |
+|   (Attacker)   |                                 |      (DC01)          |
+|                |                                 | - Active Directory   |
+| - Nmap         |                                 | - LDAP / Kerberos    |
+| - SMB Enum     |                                 | - DNS Services       |
+| - LDAP Queries |                                 +----------------------+
+| - Kerbrute     |                                          |
+| - BloodHound   |                                          |
++----------------+                                          |
+                                                             |
+                                                     +------------------+
+                                                     |   Workstation    |
+                                                     |      (WS01)      |
+                                                     | - Domain Joined  |
+                                                     | - User Sessions  |
+                                                     +------------------+
+```
+
+Assessment Flow:
+Discovery → Service Enumeration → Credential Testing → BloodHound Analysis → Attack Path Identification
+
 ## 🔎 Project Overview
 This project simulates a **realistic internal Active Directory penetration test** conducted in a fully isolated lab environment.  
 The objective was not to “hack for the sake of hacking”, but to **understand, analyze, and document how misconfigurations inside Active Directory can lead to critical privilege escalation**.
@@ -130,3 +157,4 @@ No real-world systems were accessed or targeted.
 ## 👤 Author
 **Wassim Abelghouch**  
 Cybersecurity Student | Aspiring Penetration Tester
+
